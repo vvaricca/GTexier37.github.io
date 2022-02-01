@@ -1,0 +1,93 @@
+/*
+Pour que la page HTML prenne 100% de l'écran, sans bordure
+*/
+html {
+	height:100%;
+	width:100%;
+	/* Utilisation d'une image comme arrière plan du site
+		1) on récupère l'image dans le dossier img, qui se situe dans le dossier parent de celui où se trouve le css
+		2) application de propriétés pour le rendre fixe et qu'il remplisse bien la page
+	*/
+	background-image: url('../img/fond.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	background-size: cover;
+} 
+
+/*On encre le header en haut */
+header{
+	min-width:100%;
+	top:0;
+	left:0;
+	background-color: rgb(31, 97, 141 ); /* https://htmlcolorcodes.com/fr/ */
+	color : white;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+/* Le h1 dans le header */
+header h1 {
+	margin: 0;
+	padding: 3%;
+	font-size: 110%;
+}
+
+#flexContainer {
+	display : flex;
+    justify-content:center;
+	flex-direction:row;
+	padding-left: 2%;
+	padding-right:2%;
+	height: 40em;
+	
+}
+#flexContainer div {
+	height:100% !important;
+	width:auto;
+}
+
+.left img {
+	height: 100%;
+	margin: 0px;
+}
+
+.right{
+	background-color: white;
+	padding: 1%;
+	font-size:120%;
+}
+
+a{
+	color:rgb(187, 143, 206);
+	text-decoration:none;
+	font-weight: bold;
+}
+
+a:hover{
+	text-shadow: 0px 0px 9px rgb(192,192,192); 
+}
+
+body{
+	min-height: 100%;
+	margin:0;
+}
+
+/*On encre le footer en bas */
+footer {
+	position: absolute;
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	display:flex;
+    justify-content:space-around;
+	flex-direction:row;
+	background-color: rgb(31, 97, 141);
+}
+/* Les liens du footer ont les propriétés des autres liens + celles qui suivent */
+footer a{
+	color:white; /* Dernière déclarée donc remplace la couleur définie pour les autres liens */
+	font-size: 110%;
+}
