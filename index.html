@@ -2,34 +2,48 @@
   <html>
       <head>
       <!--Ma première page HTML-->
-          <meta charset="utf-8" />
-          <title>Site Web de Guillaume Texier</title>
+			<meta charset="utf-8" />
+			<title>Site Web de Guillaume Texier</title>
+			<link rel="stylesheet" href="./css/style.css" media="screen"/> <!-- Lien relatif vers le fichier CSS pour la mise en page -->
+			<meta name="keywords" content="Guillaume Texier,informatique,tours,indre et loire,cv,curriculum vitae">
+			<meta name="author" content="Guillaume Texier">
       </head>
 
       <body> <!-- Mon premier paragraphe-->
-      	<h1>Bienvenus sur le site Web de Guillaume Texier</h1>
-      	<p>Bonjour et bienvenus sur mon site Web<p/>
+		<header> <!-- Definition du header du site -->
+			<h1>Bienvenus sur le site Web de Guillaume Texier</h1>
+		</header>
+		<div id="flexContainer"> <!-- Contient les deux divs qui doivent être cote a cote. Permet d'appliquer les attributs Flex pour le positionnement -->
+			<div class="left"> <!-- Partie Gauche, container de la photo -->
+				<img src="./img/photo.png" alt="maphoto"/> <!-- Chemin relatif vers un dossier plus bas -->
+			</div>
+			<div class="right"> <!-- Div à placer à droite de la page via CSS -->	
+				<p>Bonjour et bienvenus sur mon site Web<p/>
 
-      	<p>Ce site représente mes premiers pas en tant que développeur Web.<br /> 
-      J'apprends vite mais je suis encore novice en la matière.</p>
+				<p>Ce site représente mes premiers pas en tant que développeur Web.<br /> 
+				J'apprends vite mais je suis encore novice en la matière.</p>
 
-      	<p>Après près de 14 ans d’experience dans la même entreprise, j’ai su m’enrichir et évoluer dans differents domaines de la logitique, de la gestion de stock du matériel informatique et du management.<br />
-		Aujourd'hui, je me sens prêt à découvrir de nouvelles experiences et reste à l’écoute d’autres opportunités.<br />
-		<em>J'aime <strong>apprendre</strong> et <mark>découvrir</mark> de nouvelles choses.</em></p>
+				<p>Après près de 14 ans d’experience dans la même entreprise, j’ai su m’enrichir et évoluer dans differents domaines de la logitique, de la gestion de stock du matériel informatique et du management.<br />
+				Aujourd'hui, je me sens prêt à découvrir de nouvelles experiences et reste à l’écoute d’autres opportunités.<br />
+				<em>J'aime <strong>apprendre</strong> et <strong>découvrir</strong> de nouvelles choses.</em></p>
 
-      	<p>Parmis mes centres d'intérêts il y a : <p/>
-      		<ul>
-          		<li>Les jeux vidéo</li>
-          		<li>Les siences et technologies</li>
-          		<li>La lecture</li>
-          		<li>Le bricolage</li><!--Pourquoi le bricolage petit curieux ? Car je suis jeune propriètaire d'une maison avec pas mal de travaux ;-) -->
-          		<li>La culture Geek en général</li>
-       		</ul>
+				<p>Parmis mes centres d'intérêts il y a : <p/>
+					<ul>
+						<li>Les jeux vidéo</li>
+						<li>Les siences et technologies</li>
+						<li>La lecture</li>
+						<li>Le bricolage</li><!--Pourquoi le bricolage petit curieux ? Car je suis jeune propriètaire d'une maison avec pas mal de travaux ;-) -->
+						<li>La culture Geek en général</li>
+					</ul>
 
-       <p> Vous trouverez mon CV en cliquant <a target="_blank" href= "./CVGuillaumeTexier.pdf"title="Le CV de Guillaume Texier"> ici</a> </p>
-       
-       <p> Actuellement embauché chez <a href="https://geodis.com/fr/"title="Grande entreprise de transport mondiale">Geodis</a> j'occupe le poste de Chef d'équipe logistique.</p> 
-       
+			   <p> Vous trouverez mon CV en cliquant <a target="_blank" href= "./CVGuillaumeTexier.pdf"title="Le CV de Guillaume Texier"> ici</a> </p>
+			   
+			   <p> Actuellement embauché chez <a href="https://geodis.com/fr/"title="Grande entreprise de transport mondiale">Geodis</a> j'occupe le poste de Chef d'équipe logistique.</p> 
+			 </div>	
+		</div>	 
+		<footer> <!-- Elément de bas de page -->
+			<a href="mailto:guillaume.texier@outlook.com">guillaume.texier@outlook.com</a><a href="tel:+33698340072">06 98 34 00 72</a> <!-- Ouvre l'envoie de mail ou de l'appel téléphonique au clic -->
+		</footer>	
        </body>
        
   </html>
